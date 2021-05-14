@@ -1,0 +1,9 @@
+body {
+  font-family: var(--f-primary), sans-serif;
+  font-size: 12px;
+  background: var(--c-soft-blue);
+  background: linear-gradient(0deg, var(--c-soft-blue) 0%, var(--c-soft-violet) 100%);
+  height: 100vh;
+  color: var(--c-primary);
+}
+

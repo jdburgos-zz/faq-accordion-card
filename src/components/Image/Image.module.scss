@@ -1,0 +1,23 @@
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -107px;
+  left: 46%;
+  transform: translate(-50%, 0);
+  flex-direction: column;
+
+  &-main :global {
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: bounce;
+    animation-timing-function: ease;
+  }
+
+  &-shadow {
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+  }
+}

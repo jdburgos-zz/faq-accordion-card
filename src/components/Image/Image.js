@@ -3,8 +3,14 @@ import styles from './Image.module.scss';
 
 const Image = () => (
   <div className={styles.image}>
-    <img className={styles['image-main']} src={`${process.env.PUBLIC_URL}/images/illustration-woman-online-mobile.svg`} alt="woman online" />
-    <img className={styles['image-shadow']} src={`${process.env.PUBLIC_URL}/images/bg-pattern-mobile.svg`} alt="shadow"/>
+    <picture className={styles['image-main']}>
+      <source media="(min-width: 992px)" srcSet={`${process.env.PUBLIC_URL}/images/illustration-woman-online-desktop.svg`} />
+      <img src={`${process.env.PUBLIC_URL}/images/illustration-woman-online-mobile.svg`} alt="woman online" />
+    </picture>
+    <picture className={styles['image-shadow']}>
+      <source media="(min-width: 992px)" srcSet={`${process.env.PUBLIC_URL}/images/bg-pattern-desktop.svg`} />
+      <img src={`${process.env.PUBLIC_URL}/images/bg-pattern-mobile.svg`} alt="shadow"/>
+    </picture>
   </div>
 );
 

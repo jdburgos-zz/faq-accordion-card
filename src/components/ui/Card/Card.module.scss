@@ -1,3 +1,5 @@
+@import "src/styles/settings/variables";
+
 .card {
   background-color: #fff;
   border-radius: 20px;
@@ -7,5 +9,14 @@
   -webkit-box-shadow: 0 40px 77px 10px rgba(0,0,0,0.31);
   -moz-box-shadow: 0 40px 77px 10px rgba(0,0,0,0.31);
   box-shadow: 0 40px 77px 10px rgba(0,0,0,0.31);
-  padding: 130px 5% 25px;
+  padding: 25px 5%;
+
+  @media only screen and (min-width: $b-large) {
+    padding: 50px;
+    overflow: hidden;
+  }
+
+  @media only screen and (min-width: $b-xlarge) {
+    max-width: 60%;
+  }
 }

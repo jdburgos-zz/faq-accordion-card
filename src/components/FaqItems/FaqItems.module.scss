@@ -1,13 +1,30 @@
+@import "src/styles/settings/variables";
+
 .faq-items {
   &__title {
     text-align: center;
     font-size: 2rem;
     margin: 0 0 20px;
+
+    @media only screen and (min-width: $b-large) {
+      text-align: left;
+    }
   }
 
   &__items {
     list-style: none;
     padding: 0;
     margin: 0;
+  }
+
+  @media only screen and (min-width: $b-large) {
+    width: 45%;
+    margin-right: 5%;
+    margin-left: auto;
+  }
+
+  @media only screen and (min-width: $b-xlarge) {
+    width: 50%;
+    margin-right: 0;
   }
 }

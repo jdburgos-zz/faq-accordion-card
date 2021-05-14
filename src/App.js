@@ -5,8 +5,10 @@ import FaqItems from './components/FaqItems/FaqItems';
 
 const App = () => (
   <Card>
-    <Image />
-    <FaqItems />
+    <div className="content">
+      <Image />
+      <FaqItems />
+    </div>
   </Card>
 );
 

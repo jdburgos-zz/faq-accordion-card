@@ -1,3 +1,5 @@
+@import "src/styles/settings/variables";
+
 .image {
   display: flex;
   align-items: center;
@@ -13,11 +15,37 @@
     animation-iteration-count: infinite;
     animation-name: bounce;
     animation-timing-function: ease;
+
+    @media only screen and (min-width: $b-large) {
+      animation-name: initial;
+      z-index: 10;
+    }
   }
 
   &-shadow {
     position: absolute;
     bottom: -15px;
     right: 0;
+
+    img {
+      @media only screen and (min-width: $b-large) {
+        width: 550px;
+        height: 600px;
+      }
+    }
+
+    @media only screen and (min-width: $b-large) {
+      right: initial;
+      bottom: initial;
+      left: -90px;
+      top: -150px;
+    }
+  }
+
+  @media only screen and (min-width: $b-large) {
+    width: 50%;
+    left: -65px;
+    top: 50%;
+    transform: translate(0, -50%);
   }
 }

@@ -10,6 +10,18 @@
   transform: translate(-50%, 0);
   flex-direction: column;
 
+  &-box :global {
+    display: none;
+
+    @media only screen and (min-width: $b-large) {
+      display: block;
+      position: absolute;
+      left: -35px;
+      z-index: 15;
+      bottom: 55px;
+    }
+  }
+
   &-main :global {
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -17,7 +29,6 @@
     animation-timing-function: ease;
 
     @media only screen and (min-width: $b-large) {
-      animation-name: initial;
       z-index: 10;
     }
   }
@@ -43,7 +54,7 @@
   }
 
   @media only screen and (min-width: $b-large) {
-    width: 50%;
+    max-width: 450px;
     left: -65px;
     top: 50%;
     transform: translate(0, -50%);

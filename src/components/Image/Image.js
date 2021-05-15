@@ -3,6 +3,10 @@ import styles from './Image.module.scss';
 
 const Image = () => (
   <div className={styles.image}>
+    <picture className={styles['image-box']}>
+      <source media="(min-width: 992px)" srcSet={`${process.env.PUBLIC_URL}/images/illustration-box-desktop.svg`} />
+      <img src={`${process.env.PUBLIC_URL}/images/illustration-box-desktop.svg`} alt="woman online" />
+    </picture>
     <picture className={styles['image-main']}>
       <source media="(min-width: 992px)" srcSet={`${process.env.PUBLIC_URL}/images/illustration-woman-online-desktop.svg`} />
       <img src={`${process.env.PUBLIC_URL}/images/illustration-woman-online-mobile.svg`} alt="woman online" />

@@ -1,4 +1,7 @@
+/** React core **/
 import React from 'react';
+
+/** Styles **/
 import styles from './Image.module.scss';
 
 const Image = () => (

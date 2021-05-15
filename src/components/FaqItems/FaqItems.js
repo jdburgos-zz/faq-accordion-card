@@ -1,6 +1,11 @@
+/** React core **/
 import React from 'react';
-import styles from './FaqItems.module.scss';
+
+/** Components **/
 import FaqItem from '../FaqItem/FaqItem';
+
+/** Styles **/
+import styles from './FaqItems.module.scss';
 
 const ITEMS = [
   {

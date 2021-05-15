@@ -1,4 +1,7 @@
+/** React core **/
 import React, { useState } from 'react';
+
+/** Styles **/
 import styles from './FaqItem.module.scss';
 
 const FaqItem = props => {

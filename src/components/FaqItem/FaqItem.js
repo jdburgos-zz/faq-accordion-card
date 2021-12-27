@@ -12,14 +12,15 @@ const FaqItem = props => {
   };
 
   const activeClass = showContent ? styles.active : '';
+  const content = <p className={styles['faq-item__content']}>{props.item.content}</p>;
 
   return (
-    <div className={`${styles['faq-item']} ${activeClass}`} onClick={itemClickHandler.bind(null, props.item)}>
+    <div id={props.item.id} className={`${styles['faq-item']} ${activeClass}`} onClick={itemClickHandler.bind(null, props.item)}>
       <div className={styles['faq-item__header']}>
         <div className={styles['faq-item__title']}>{props.item.title}</div>
         <img className={styles['faq-item__arrow']} src={`${process.env.PUBLIC_URL}/images/icon-arrow-down.svg`} alt="arrow" />
       </div>
-      {showContent && <p className={styles['faq-item__content']}>{props.item.content}</p>}
+      {showContent && content}
     </div>
   )
 };

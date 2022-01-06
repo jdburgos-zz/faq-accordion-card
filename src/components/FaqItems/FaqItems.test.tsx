@@ -17,4 +17,4 @@ describe('FaqItems component', () => {
 
     expect(titleElement).toBeInTheDocument();
   });
-})
+});

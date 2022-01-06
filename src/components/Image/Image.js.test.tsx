@@ -15,21 +15,21 @@ describe('Image component', () => {
     beforeEach(() => render(<Image />));
 
     test("contains 'box' alt text", () => {
-      const womanImg = screen.getByAltText(/box/i)
+      const womanImg = screen.getByAltText(/box/i);
 
       expect(womanImg).toBeInTheDocument();
     });
 
     test("contains 'woman online' alt text", () => {
-      const womanImg = screen.getByAltText(/woman online/i)
+      const womanImg = screen.getByAltText(/woman online/i);
 
       expect(womanImg).toBeInTheDocument();
     });
 
     test("contains 'shadow' alt text", () => {
-      const womanImg = screen.getByAltText(/shadow/i)
+      const womanImg = screen.getByAltText(/shadow/i);
 
       expect(womanImg).toBeInTheDocument();
     });
-  })
-})
+  });
+});

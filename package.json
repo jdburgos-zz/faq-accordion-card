@@ -12,7 +12,8 @@
     "deploy": "npx gh-pages -b page -d build",
     "prepare": "husky install",
     "lint": "eslint . --cache --fix",
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "pre-commit": "lint-staged"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",

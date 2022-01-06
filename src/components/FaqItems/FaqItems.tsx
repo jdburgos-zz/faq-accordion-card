@@ -18,7 +18,7 @@ const ITEMS = [
   },
   {
     id: 3,
-    title: 'How do I reset my password? asdasdasd',
+    title: 'How do I reset my password?',
     content:
       'Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.',
   },

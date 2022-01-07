@@ -1,24 +1,24 @@
 @import 'src/styles/settings/variables';
 
 .image {
-  display: flex;
   align-items: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  left: 46%;
   position: absolute;
   top: -107px;
-  left: 46%;
   transform: translate(-50%, 0);
-  flex-direction: column;
 
   &-box :global {
     display: none;
 
     @media only screen and (min-width: $b-large) {
-      display: block;
-      position: absolute;
-      left: -35px;
-      z-index: 15;
       bottom: 55px;
+      display: block;
+      left: -35px;
+      position: absolute;
+      z-index: 15;
     }
   }
 
@@ -34,28 +34,28 @@
   }
 
   &-shadow {
-    position: absolute;
     bottom: -15px;
+    position: absolute;
     right: 0;
 
     img {
       @media only screen and (min-width: $b-large) {
-        width: 550px;
         height: 600px;
+        width: 550px;
       }
     }
 
     @media only screen and (min-width: $b-large) {
-      right: initial;
       bottom: initial;
       left: -90px;
+      right: initial;
       top: -150px;
     }
   }
 
   @media only screen and (min-width: $b-large) {
-    max-width: 450px;
     left: -65px;
+    max-width: 450px;
     top: 50%;
     transform: translate(0, -50%);
   }

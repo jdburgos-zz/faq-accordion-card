@@ -13,7 +13,8 @@
     "prepare": "husky install",
     "lint": "eslint . --cache --fix",
     "format": "prettier . --write",
-    "stylelint": "stylelint \"**/*.scss\" --fix"
+    "stylelint": "stylelint \"**/*.scss\" --fix",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
@@ -45,6 +46,7 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.1.5",
     "prettier": "^2.5.1",
+    "source-map-explorer": "^2.5.2",
     "stylelint": "^14.2.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended-scss": "^5.0.2",

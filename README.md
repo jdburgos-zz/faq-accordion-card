@@ -1,6 +1,7 @@
 # FAQ Accordion component
 
-This project is for learn and practice ReactJs.
+This project is for learn and practice ReactJs.\
+See the app in production - [FAQ accordion app](https://jdburgos.github.io/faq-accordion-card/)
 
 ## Available Scripts
 

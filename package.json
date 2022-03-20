@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://jdburgos.github.io/faq-accordion-card/",
-  "tags": [
+  "topics": [
     "react", "typescirpt", "jest", "cypress"
   ],
   "scripts": {

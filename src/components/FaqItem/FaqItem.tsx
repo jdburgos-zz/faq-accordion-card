@@ -27,6 +27,7 @@ const FaqItem: React.FC<FaqItemProps> = ({ item }) => {
       id={String(item.id)}
       className={`${styles['faq-item']} ${activeClass}`}
       onClick={itemClickHandler.bind(null, item)}
+      data-cy="faq-item"
     >
       <div className={styles['faq-item__header']}>
         <div className={styles['faq-item__title']}>{item.title}</div>

@@ -14,7 +14,9 @@
     "lint": "eslint . --cache --fix",
     "format": "prettier . --write",
     "stylelint": "stylelint \"**/*.scss\" --fix",
-    "analyze": "source-map-explorer 'build/static/js/*.js'"
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "cypress": "cypress open",
+    "cypress:ci": "cypress run"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
@@ -34,11 +36,14 @@
   "devDependencies": {
     "@commitlint/cli": "^16.0.1",
     "@commitlint/config-conventional": "^16.0.0",
+    "@cypress/code-coverage": "^3.9.12",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
+    "cypress": "^9.5.2",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0",
